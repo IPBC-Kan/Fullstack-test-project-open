@@ -30,10 +30,10 @@ The application demonstrates basic full stack development patterns including:
 
 ### Installation
 
-1. Clone the repository:
+1. fork the repository:
 
     ```bash
-    https://github.com/IPBC-Kan/Fullstack-test-project-open.git
+    https://github.com/<youraccount>/Fullstack-test-project-open.git
     cd Fullstack-test-project-open
     ```
 
@@ -55,7 +55,7 @@ The application demonstrates basic full stack development patterns including:
 
     ```bash
     # From the server directory
-    npm start
+    npm run dev
     ```
 
     The server will run on port 5000 by default (http://localhost:5000).
@@ -63,7 +63,7 @@ The application demonstrates basic full stack development patterns including:
 2. In a separate terminal, start the client:
     ```bash
     # From the client directory
-    npm start
+    npm run dev
     ```
     The React app will run on port 3000 by default (http://localhost:3000).
 
