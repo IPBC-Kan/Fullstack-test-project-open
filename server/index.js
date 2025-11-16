@@ -26,11 +26,21 @@ let products = [
 // GET /api/products - retrieve all products
 app.get('/api/products', (req, res) => {
     // IMPLEMENT FETCH PRODUCTS LOGIC
+    res.json(products);
 });
 
 // POST /api/products - add a new product
 app.post('/api/products', (req, res) => {
     // IMPLEMENT ADD PRODUCT LOGIC
+    const { name, category } = req.body;
+    const newProduct = {
+        id: (products.length + 1).toString(),
+        name,
+        category,
+        createdAt: new Date(),
+    };
+    products.push(newProduct);
+    res.status(201).json(newProduct);
 });
 
 // Start the server
